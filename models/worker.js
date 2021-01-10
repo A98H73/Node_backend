@@ -1,7 +1,7 @@
 const mongoose = require('mongoose')
 
 
-const WorkerScheme = new mongoose.Schema({
+const WorkerSchema = new mongoose.Schema({
 
     Emp_Name:{
         type : String,
@@ -21,10 +21,9 @@ const WorkerScheme = new mongoose.Schema({
     },
     sub:{
         type: Boolean,
-        required: true,
         default: false,
     }
 
 })
 
-module.exports = mongoose.model('Worker', WorkerScheme)
+module.exports = mongoose.model('Worker', WorkerSchema)

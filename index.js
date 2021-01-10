@@ -14,7 +14,7 @@ con.on('open', () => {
 
 app.use(express.json())
 
-const workrouter = require('./routers/workers.js')
+const workrouter = require('./routers/workers')
 app.use('/workers', workrouter)
 
 app.listen(8080, () =>{
